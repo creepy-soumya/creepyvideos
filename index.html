@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Watch the most disturbing and creepy videos online. Explore a collection of eerie content with detailed descriptions.">
+  <meta name="keywords" content="creepy videos, disturbing videos, horror, scary videos">
+  <meta name="author" content="Your Name">
+  <title>Creepy Videos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Creepy Videos</h1>
+    <p>Your source for the most disturbing content online</p>
+  </header>
+
+  <!-- Admin Panel (Hidden by Default) -->
+  <section class="admin-panel" id="admin-panel" style="display: none;">
+    <h2>Admin Panel</h2>
+    <form id="video-form">
+      <input type="text" id="video-title" placeholder="Video Title" required>
+      <input type="text" id="video-thumbnail" placeholder="Thumbnail URL" required>
+      <input type="text" id="video-link" placeholder="Video Link (e.g., YouTube, Vimeo)" required>
+      <button type="submit">Add Video</button>
+    </form>
+  </section>
+
+  <!-- Video Section -->
+  <section class="video-container" id="video-container">
+    <!-- Videos will be dynamically added here -->
+  </section>
+
+  <!-- Ads Section -->
+  <section class="ads-section">
+    <h2>Advertisement</h2>
+    <div class="ad">
+      <img src="https://via.placeholder.com/728x90" alt="Ad Banner">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Creepy Videos. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
