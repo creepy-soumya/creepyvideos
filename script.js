@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const videos = JSON.parse(localStorage.getItem('videos')) || [];
   renderVideos(videos);
 
-  // Show admin panel only if the URL contains "/admin"
-  if (window.location.href.includes('/admin')) {
+  // Check if the URL contains "/admin"
+  if (window.location.hash === '#/admin') {
     document.getElementById('admin-panel').style.display = 'block';
   }
 });
